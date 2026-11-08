@@ -1,0 +1,7 @@
+sh grep -c "Processing packet received" logs/s1.txt logs/s2.txt > assignment/evidence/loop-after.txt
+logs/s1.txt:990
+logs/s2.txt:988
+
+mininet> sh sleep 5; grep -c "Processing packet received" logs/s1.txt logs/s2.txt >> assignment/evidence/loop-after.txt
+logs/s1.txt:990
+logs/s2.txt:988
